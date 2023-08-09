@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>social</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      margin: 0;
+      background-image: url("img/background.jpg");
+      background-size: cover;
+      cursor: url('img/curseur.png'), auto;
+    }
+
+
+    .logo {
+    max-width: 170px; /* Ajustez la largeur maximale du logo */
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    text-align: center;
+  }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      max-width: 80%;
+      width: 400px;
+    }
+
+    .image-container {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .description {
+      text-align: center;
+    }
+    .social-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .social-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s; /* Animation de transformation au survol */
+      margin: 0 40px;
+    }
+
+    .social-button img {
+      width: 480px; /* Ajustez la taille de l'image agrandie */
+      height: auto;
+    }
+
+    .social-button a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* Animation de transformation au survol */
+    .social-button:hover {
+      transform: scale(1.1); /* Agrandissement au survol */
+    }
+  </style>
+
+  <script>
+    function goToIndex() {
+      window.location.href = "index.html";
+    }
+    const backgroundMusic = new Audio("mp3/instru.mp3");
+    backgroundMusic.loop = true;
+    backgroundMusic.volume = 0.2;
+
+    document.addEventListener("DOMContentLoaded", function() {
+      backgroundMusic.play();
+    });
+
+    function goToIndex() {
+      window.location.href = "index.html";
+    }
+   </script>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="no-hand-cursor">
+      <img src="img/VKN.png" alt="Bienvenue sur mon site" class="logo">
+    </a>
+  </header>
+
+      <div class="video-background">
+        <div class="video-wrap">
+          <video autoplay loop muted class="video">
+            <source src="img/background.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    
+      <div class="social-buttons">
+        <div class="social-button">
+          <a href="https://www.twitch.tv/vknttv" target="_blank">
+            <img src="img/twitch.png" alt="Twitch">
+          </a>
+        </div>
+        <div class="social-button">
+          <a href="https://www.tiktok.com/@vknttv" target="_blank">
+            <img src="img/tiktok.png" alt="TikTok">
+          </a>
+        </div>
+      </div>
+    </body>
+    </html>
